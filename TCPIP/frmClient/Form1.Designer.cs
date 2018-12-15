@@ -80,6 +80,7 @@
             this.btnConnect.TabIndex = 5;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // txtBoxMessage
             // 
@@ -97,6 +98,7 @@
             this.btnSend.TabIndex = 11;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // txtBoxStatus
             // 
@@ -120,7 +122,9 @@
             this.Controls.Add(this.lblHost);
             this.Controls.Add(this.btnConnect);
             this.Name = "frmClient";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmClient";
+            this.Load += new System.EventHandler(this.frmClient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

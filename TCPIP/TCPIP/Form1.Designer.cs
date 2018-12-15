@@ -45,6 +45,7 @@
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // lblHost
             // 
@@ -88,6 +89,7 @@
             this.btnStop.TabIndex = 5;
             this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // txtBoxStatus
             // 
@@ -112,6 +114,7 @@
             this.Name = "frmServer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmServer";
+            this.Load += new System.EventHandler(this.frmServer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
