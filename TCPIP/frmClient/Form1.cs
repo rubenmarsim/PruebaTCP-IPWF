@@ -42,7 +42,8 @@ namespace frmClient
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            Client.WriteLineAndGetReply(txtBoxMessage.Text, TimeSpan.FromSeconds(3));
+                Client.WriteLineAndGetReply(txtBoxMessage.Text, TimeSpan.FromSeconds(10));
+
         }
     }
 }

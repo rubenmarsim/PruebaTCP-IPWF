@@ -19,6 +19,7 @@ namespace TCPIP
         }
 
         SimpleTcpServer server;
+        System.Net.IPAddress ip;
 
         private void frmServer_Load(object sender, EventArgs e)
         {
@@ -41,7 +42,10 @@ namespace TCPIP
         private void btnStart_Click(object sender, EventArgs e)
         {
             txtBoxStatus.Text += "Server Starting...";
-            System.Net.IPAddress ip = new System.Net.IPAddress(long.Parse(txtBoxHost.Text));
+            //long hola = long.Parse(txtBoxHost.Text);
+            //ip = new System.Net.IPAddress(hola);
+            ip = new System.Net.IPAddress(long.Parse(txtBoxHost.Text));
+            //ip = new System.Net.IPAddress((long)txtBoxHost.Text);
             server.Start(ip, Convert.ToInt32(txtBoxPort.Text));
         }
 
